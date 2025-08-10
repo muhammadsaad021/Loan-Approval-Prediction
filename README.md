@@ -11,16 +11,17 @@ The dataset used is the [Kaggle Loan Approval Prediction Dataset](https://www.ka
 
 The dataset contains a mix of **categorical** and **numerical** features, including:
 
-- Applicant income  
-- Co-applicant income  
-- Loan amount and term  
-- Credit history  
-- Gender  
-- Marital status  
-- Education level  
-- Employment status  
-- Property area  
-
+- Number of dependents (`no_of_dependents`)  
+- Education level (`education`)  
+- Self-employed status (`self_employed`)  
+- Annual income (`income_annum`)  
+- Loan amount (`loan_amount`)  
+- Loan term (`loan_term`)  
+- CIBIL credit score (`cibil_score`)  
+- Residential assets value (`residential_assets_value`)  
+- Commercial assets value (`commercial_assets_value`)  
+- Luxury assets value (`luxury_assets_value`)  
+- Bank asset value (`bank_asset_value`)  
 All **categorical features** were **one-hot encoded**, and **numerical features** were **scaled** using a **Scikit-learn Pipeline** and **ColumnTransformer**.
 
 ---
